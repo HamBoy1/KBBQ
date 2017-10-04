@@ -4,6 +4,38 @@
 <title>hafnarfjordur</title>
 <style>
 
+nav ul{
+	position: fixed;
+	text-align: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	opacity: 0.85;
+	width: 100%;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+li {
+	float: center;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #111;
+}
+
 body, html {
   height: 100%;
   margin: 0;
@@ -22,15 +54,17 @@ body, html {
 }
 .bgimg-1 {
   background-image: url("https://cdn.pixabay.com/photo/2016/07/21/13/09/grill-1532484_960_720.jpg");
-  min-height: 100%;
+  min-height: 82.5%;
+  z-index: -1;
 }
 
 .bgimg-2 {
   background-image: url("http://i.vimeocdn.com/video/497349186_1280x720.jpg");
   min-height: 400px;
+  z-index: -1;
 }
 
-.caption {
+.caption1, .caption2 {
   position: absolute;
   left: 0;
   top: 50%;
@@ -39,12 +73,30 @@ body, html {
   color: #000;
 }
 
-.caption span.border {
+.caption1 span.border {
   background-color: #000;
   color: #fff;
   padding: 18px;
-  font-size: 25px;
+  font-size: 40px;
   letter-spacing: 10px;
+  padding-bottom: 35px;
+}
+
+.caption2 span.border {
+  background-color: #000;
+  color: #fff;
+  padding: 18px;
+  font-size: 40px;
+  letter-spacing: 10px;
+}
+
+span.smallboy {
+	position: absolute;
+	left: 48%;
+	top: 57%;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
 }
 
 h3 {
@@ -54,13 +106,32 @@ h3 {
   color: #111;
 }
 
+.main {
+	padding: 16px;
+	margin-top: 30px;
+}
+
 </style>
 </head>
 <body>
+
+	<nav>
+		<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Menu</a></li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="#">Reviews</a></li>
+		<li><a href="#">Gallery</a></li>
+		</ul>
+	</nav>
+
+
 <div class="bgimg-1">
-  <div class="caption">
-    <span class="border"><i>WELL DONE BBQ</i></span>
+  <div class="caption1">
+    <span class="border"><i>WELL DONE </i>BBQ</span>
   </div>
+  <span class="smallboy">subtitle</span>
 </div>
 
 <div style="color: #666;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
@@ -78,22 +149,24 @@ h3 {
 </div>
 
 <div class="bgimg-2">
-  <div class="caption">
+  <div class="caption2">
     <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">HAFNARFJORDUR</span>
   </div>
 </div>
 
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-    <p>Maybe a cool review or something</p>
+    <p style="text-align:center;"><i>"Grillið er góður gamall tækni til að gera setja nokkra hluti ofan. Ég held að þú leggur áherslu á matinn, þá þarftu mestan tang eða skeið til að athuga eitthvað; það er það."</i>  -Ronald Reagan</p>
   </div>
 </div>
 
 
 <div class="bgimg-1">
-  <div class="caption">
+  <div class="caption2">
     <span class="border">MORE WORDS!</span>
   </div>
 </div>
+
+
 </body>
 </html>
