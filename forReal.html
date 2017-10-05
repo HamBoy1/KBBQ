@@ -14,6 +14,7 @@ nav ul{
 	background-color: #333;
 	opacity: 0.85;
 	width: 100%;
+	z-index: +1;
 }
 
 nav ul li {
@@ -21,7 +22,7 @@ nav ul li {
 }
 
 li {
-	float: center;
+	float: center
 }
 
 li a {
@@ -54,7 +55,7 @@ body, html {
 }
 .bgimg-1 {
   background-image: url("https://cdn.pixabay.com/photo/2016/07/21/13/09/grill-1532484_960_720.jpg");
-  min-height: 82.5%;
+  min-height: 77.5%;
   z-index: -1;
 }
 
@@ -64,7 +65,7 @@ body, html {
   z-index: -1;
 }
 
-.caption1, .caption2 {
+.caption{
   position: absolute;
   left: 0;
   top: 50%;
@@ -73,30 +74,12 @@ body, html {
   color: #000;
 }
 
-.caption1 span.border {
+.caption span.border {
   background-color: #000;
   color: #fff;
   padding: 18px;
-  font-size: 40px;
+  font-size: 25px;
   letter-spacing: 10px;
-  padding-bottom: 35px;
-}
-
-.caption2 span.border {
-  background-color: #000;
-  color: #fff;
-  padding: 18px;
-  font-size: 40px;
-  letter-spacing: 10px;
-}
-
-span.smallboy {
-	position: absolute;
-	left: 48%;
-	top: 57%;
-	text-align: center;
-	color: #fff;
-	font-size: 20px;
 }
 
 h3 {
@@ -118,7 +101,6 @@ h3 {
 	<nav>
 		<ul>
 		<li><a href="#">Home</a></li>
-		<li><a href="#">About</a></li>
 		<li><a href="#">Menu</a></li>
 		<li><a href="#">Contact</a></li>
 		<li><a href="#">Reviews</a></li>
@@ -128,10 +110,9 @@ h3 {
 
 
 <div class="bgimg-1">
-  <div class="caption1">
-    <span class="border"><i>WELL DONE </i>BBQ</span>
+  <div class="caption">
+    <span class="border"><i>WELL DONE</i> KBBQ</span>
   </div>
-  <span class="smallboy">subtitle</span>
 </div>
 
 <div style="color: #666;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
@@ -149,20 +130,20 @@ h3 {
 </div>
 
 <div class="bgimg-2">
-  <div class="caption2">
+  <div class="caption">
     <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">HAFNARFJORDUR</span>
   </div>
 </div>
 
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-    <p style="text-align:center;"><i>"Grillið er góður gamall tækni til að gera setja nokkra hluti ofan. Ég held að þú leggur áherslu á matinn, þá þarftu mestan tang eða skeið til að athuga eitthvað; það er það."</i>  -Ronald Reagan</p>
+    <p style="text-align:center;"><i>"Grillið er góður tækni til að setja nokkra hluti ofan. Ég að þú áherslu á matinn, þá þarftu mestan tang eða skeið til að athuga eitthvað; það er það."</i>  -Ronald Reagan</p>
   </div>
 </div>
 
 
 <div class="bgimg-1">
-  <div class="caption2">
+  <div class="caption">
     <span class="border">MORE WORDS!</span>
   </div>
 </div>
