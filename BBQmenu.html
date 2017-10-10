@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Menu</title>
+<style>
+body, html{
+	height: 100%;
+	margin: 0;
+	font: 400 15px/1.8 "Lato", sans-serif;
+	color: black;
+
+}
+nav ul{
+	position: fixed;
+	text-align: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	opacity: 0.85;
+	width: 100%;
+	z-index: +1;
+}
+nav ul li {
+	display: inline-block;
+}
+li {
+	float: left
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover {
+	background-color: #111;
+}
+
+.bgimg-2 {
+  background-image: url("http://i.vimeocdn.com/video/497349186_1280x720.jpg");
+  /*min-height: 200px;*/
+  z-index: -1;
+  
+  position: absolute;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.box{
+	background-color: white;
+	padding: 20px;
+	padding-top: -40px;
+	position: absolute;
+	left: 0;
+	top: 35%;
+	width: 100%;
+}
+
+.columnLeft{
+    width: 20%;
+	float: left;
+	padding-left: 20px;
+}
+
+.columnRight{
+	width: 20%;
+	float: right;
+	padding-right: 20px;
+}
+
+.column.middle {
+    width: 50%;
+	float: left;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+</style>
+<head>
+<body style="background-color: #999;">
+
+
+	<nav>
+		<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Menu</a></li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="#">Reviews</a></li>
+		<li><a href="#">Gallery</a></li>
+		</ul>
+	</nav>
+
+<div class="bgimg-2"> </div>
+
+<div class="box">
+<div class="row">
+	<div class="columnLeft">
+		<h2>A place for ads</h2>
+		<p>aaaaaaah</p>
+	</div>
+	<div class="column middle">
+		<h2 style="text-align: center;">Menu</h2>
+		<p><ul>
+		<li>Bulgogi (불고기) - Marinated Beef..........................................................................................................................$12</li><br>
+		<li>Chadol bagi (차돌박이), thinly sliced brisket point..................................................................................................$12</li><br>
+		<li>Deungsim (등심), sirloin..........................................................................................................................................$12</li><br>
+		<li>Kkot deungsim (꽃등심) rib eye steak roll...............................................................................................................$12</li><br>
+		<li>Ansim (안심), beef tenderloin..................................................................................................................................$12</li><br>
+		<li>Salchisal (살치살), chuck flap tail............................................................................................................................$12</li><br>
+		<li>Galbisal (갈비살), rib meat......................................................................................................................................$12</li><br>
+		<li>Chae kkeut (채끝), strip loin....................................................................................................................................$12</li><br>
+		<li>Chimasal yangji (치마살양지), flank steak..............................................................................................................$12</li><br>
+		</ul></p>
+	</div>
+	<div class="columnRight">
+		<h2>A place for coupons</h2>
+		<p>aaaaaaaaaah!</p>
+	</div>
+</div>
+</div>
+
+</body>
+</html>
