@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Reviews</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, html{
+	height: 100%;
+	margin: 0;
+	font: 400 15px/1.8 "Lato", sans-serif;
+	color: black;
+}
+nav ul{
+	position: fixed;
+	text-align: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	opacity: 0.85;
+	width: 100%;
+	z-index: +1;
+}
+nav ul li {
+	display: inline-block;
+}
+li {
+	float: left
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover {
+	background-color: #111;
+}
+.bgimg-2 {
+  background-image: url("http://i.vimeocdn.com/video/497349186_1280x720.jpg");
+  /*min-height: 200px;*/
+  z-index: -1;
+  
+  position: absolute;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.box{
+	padding: 20px;
+	//padding-top: -40px;
+	position: absolute;
+	left: 0;
+	top: 25%;
+	width: 100%;
+}
+.columnSide{
+   	width: 20%;
+	float: left;
+	padding-left: 20px;
+	background-color:#282E34;
+	color: white;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
+
+.columnMiddle {
+    width: 50%;
+	float: left;
+	background-color: white;
+	margin-left: 30px;
+	margin-right: 30px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+	z-index: -1;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+pre{
+	display: block;
+	white-space: pre;
+	font-family: helvetica;
+	text-align: justify;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.hat {
+	background-color: black;
+	width: 48%;
+	left: 24.1%;;
+	top: 17%;
+	color: white;
+	position: absolute;
+	text-align: center;
+	font-size: 35px;
+	padding: 18px;
+	letter-spacing: 5px;
+	z-index: +1;
+}
+
+.checked {
+	color: orange;
+}
+
+button {
+	position: absolute;
+	left: 45%;
+	top: 90%;
+}
+
+</style>
+<head>
+<body style="background-color: #999;">
+
+
+	<nav>
+		<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Menu</a></li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="#">Reviews</a></li>
+		<li><a href="#">Gallery</a></li>
+		</ul>
+	</nav>
+
+<div class="bgimg-2">
+<div class="hat">REVIEWS</div>
+</div>
+
+			
+<div class="box">
+<div class="row">
+	<div class="columnSide">
+		<h2>A place for ads</h2>
+		<p>aaaaaaah</p>
+	</div>
+	<div class="columnMiddle">
+		<p><pre>
+		<li><strong>Timothy Green  </strong><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+	Well Done was truly one of the best barbecue restaurants my family and I have ever been to. We ordered
+	the Ansim, Galbisal, and the Bulgogi and my wife and kids loved it! Aside from the fantastic food, the
+	restaurant is so beautifully decorated and the environment is really lively with great music. It’s a fun
+	place to eat and I highly, highly recommend it to everyone.</p></li>
+		<li><strong>Cheong Sewon  </strong><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span>
+	O...M...G. Eating at Well Done was a one of a kind experience. My friends and I came at two in the morning
+	and this place was packed! Even with all the rush, I noticed that the employees did an amazing job at handling
+	all the customers. Their service was really good as they were kind and took time to take our orders and give my
+	friends and I recommendations. And our food came so fast! It seemed like it had only been just a few minutes
+	before the steaming Chae kkeut came on our table. Ooh that thick sauce smothered on the juicy, tender, meat
+	was delicious. If you are ever in the area, you must come to Well Done. You’ll thank me later.</p></li>
+		<li><strong>Jerome Paque  </strong><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span>
+	Well Done is different than most Korean Barbecues. It’s wide variety of dishes ranging from Chimasal yangji to
+	Deungsim is impressive. Not to mention the fact that they consistently cook each entree perfectly with great
+	seasoning. Even better is how Well Done serves their tasty meals in such an aesthetically pleasing manner. As
+	an art connoisseur, I appreciated the way the barbecue and sides were delicately placed on the plate. Overall
+	this restaurant, in my opinion, needs to be on your bucket list.</p>
+	</li>
+		</pre></p>
+	<button onclick="message()">Submit a review</button>
+
+	<script>
+	function message() {
+    alert("Review machine broke");
+	}
+	</script>
+	</div>
+	<div class="columnSide">
+		<h2>A place for coupons</h2>
+		<p>aaaaaaaaaah!</p>
+	</div>
+</div>
+</div>
+
+</body>
+</html>
